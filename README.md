@@ -11,3 +11,10 @@
 
 ### Block
 * Pour afficher un block dans n'importe quel fichier *twig* avec [Twig tweak](https://www.drupal.org/project/twig_tweak) il faudra utiliser ``` {{ drupal_entity('block','block_name', check_access=false) }} ```
+
+
+### Devel
+* Pour pouvoir utiliser ```kint()``` sans être redirigé vers l'install de Drupal :
+``` kint_require(); ```
+```Kint::$maxLevels = 3; ```
+
